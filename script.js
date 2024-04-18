@@ -77,6 +77,26 @@ six(x)
 
 // ES 7
 
+function seven(a) {
+  if (a < 90) {
+    return "acuto"
+
+  } else if (a > 90 && a < 180) {
+    return "ottuso"
+
+  } else if (a === 90) {
+    return "retto"
+
+  } else if (a === 180) {
+    return "piatto"
+
+  } else {
+    return "concavo"
+  }
+}
+
+console.log(seven(90)); 
+
 // ES 8
 
 let acronimo = "Associazione Bipolare Dal Uno Luglio"
@@ -94,3 +114,9 @@ console.log(eight(acronimo));
 // Inizio gli Extra
 
 // ES 1
+
+  let parola = "brambilla"
+  let y = parola.split()
+  for (let i = 0; i <= y.length; i++) {
+    
+  }

@@ -115,8 +115,26 @@ console.log(eight(acronimo));
 
 // ES 1
 
-  let parola = "brambilla"
-  let y = parola.split()
-  for (let i = 0; i <= y.length; i++) {
-    
+let ciccio = 'brambilla'
+
+
+function oneExtra (stringa) {
+  // itero le lettere da a - z
+  for (let i = 97; i <= 122; i++) {
+    let counter = 0;
+    // faccio in modo che controlli le lettere da a - z
+    let lettera = String.fromCharCode(i)
+
+    for (let i = 0; i<= stringa.length; i++) {
+      if (stringa[i] === lettera) {
+        counter++
+      }
+    }
+
+    if (counter > 0) {
+      console.log(`nella frase ${stringa}, ${lettera} compare ${counter} volte`);
+    }
   }
+}
+
+oneExtra(ciccio)
